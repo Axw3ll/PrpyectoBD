@@ -1,0 +1,33 @@
+
+
+@api = http://localhost:3000/products
+
+GET {{api}}
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+"name":"producto 124 ",
+"description":" gamer",
+"quantity":"30"
+
+}
+### Optener elemento por id 
+GET {{api}}/2
+
+### Borrar un elemento por ID
+DELETE {{api}}/3
+
+###Obtener el total de productos que tengo en mi bd 
+GET {{api}}/count
+
+### Actualizar un producto 
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "name":"Prueba Actua",
+    "description":"Prueba",
+    "quantity":1
+}
